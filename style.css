@@ -1,40 +1,107 @@
-body {
+
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: Arial, sans-serif;
-  background: #0b1220;
-  color: white;
+  background: #f4f6f8;
+  color: #222;
   line-height: 1.6;
 }
 
 header {
-  background: #111827;
-  padding: 20px;
-  text-align: center;
-}
-
-.hero {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: orange;
-  color: black;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.about, .contact {
+  background: #0b2c4d;
+  color: white;
   padding: 40px 20px;
   text-align: center;
 }
 
-footer {
-  background: #111827;
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  padding: 40px 20px;
+  background-image: url("aig-garba.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+nav {
+  background: #123b63;
+  padding: 12px;
   text-align: center;
-  padding: 15px;
-  font-size: 14px;
+}
+
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+section {
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+  color: #0b2c4d;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 16px;
+}
+
+footer {
+  background: #0b2c4d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 26px;
+    padding: 30px 15px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 6px;
+  }
+
+  section {
+    margin: 15px;
+  }
 }
